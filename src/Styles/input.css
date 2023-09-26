@@ -31,3 +31,14 @@
     transition: 0.2 all;
     box-shadow: 0 0 10px black;
 }
+.todos{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    flex-wrap: wrap;
+}
+.todos-single{
+    display: flex;
+    width: 29.5%;
+    
+}
