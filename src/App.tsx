@@ -22,6 +22,10 @@ console.log(todo)
     <div className='App'>
       <span className='heading'>SET YOUR TASKS</span>
       <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd}/>
+      <TodoList/>
+      {todos.map((t) => (
+        <li>{t.todo}</li>
+      ))}
     </div>
   )
 }
