@@ -43,8 +43,9 @@
     width: 29.5%;
     border-radius: 5px;
     padding: 20px;
+    margin-left: 20px;
     margin-top: 15px;
-    background-color: salmon;
+    background-image: url('https://img.freepik.com/free-vector/blue-glowing-diagonal-lines-abstract-background-design_1017-27053.jpg?w=1380&t=st=1695830840~exp=1695831440~hmac=517028cf175434fbdc69c516458d5fb0e8bc8d869b382e8c62f95b2a66d0147d');
     transition: 0.2s;
 }
 .todos-single--text{
@@ -60,6 +61,7 @@
     margin-left: 10px;
     font-size: 25px;
     cursor: pointer;
+    text-align: center;
 }
 @media (max-width: 700px) {
     .input{
