@@ -45,11 +45,10 @@
     padding: 20px;
     margin-left: 20px;
     margin-top: 15px;
-    background-image: url('https://img.freepik.com/free-vector/abstract-background-with-modern-design_1048-7817.jpg?w=1380&t=st=1695831743~exp=1695832343~hmac=67070e0cd854d41853ff27f852b120612abc84b5052e9d999f9486cb39fd9c52');
+    background-image: url('https://i.pinimg.com/474x/7f/8b/f6/7f8bf600d4564d9c98c8e214509eefc3.jpg');
     transition: 0.5s;
 }
 .todos-single--text{
-    color: silver;
     flex: 1;
     padding: 5px;
     border: none;
@@ -61,7 +60,6 @@
 }   
 .icon{
     margin-left: 10px;
-    color: silver;
     font-size: 25px;
     cursor: pointer;
     text-align: center;
