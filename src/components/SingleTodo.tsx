@@ -50,9 +50,9 @@ const SingleTodo: React.FC<Props> = ({todo, todos, setTodos}) => {
           className='todos-single--text'
           />
         ): todo.isDone? (
-          <s className='todos-single-text'>{todo.todo}</s>
+          <s className='todos-single--text'>{todo.todo}</s>
          ):(
-           <span className='todos-single-text'>{todo.todo}</span>
+           <span className='todos-single--text'>{todo.todo}</span>
          )
       }
 

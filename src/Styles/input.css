@@ -45,10 +45,11 @@
     padding: 20px;
     margin-left: 20px;
     margin-top: 15px;
-    background-image: url('https://img.freepik.com/free-vector/blue-glowing-diagonal-lines-abstract-background-design_1017-27053.jpg?w=1380&t=st=1695830840~exp=1695831440~hmac=517028cf175434fbdc69c516458d5fb0e8bc8d869b382e8c62f95b2a66d0147d');
-    transition: 0.2s;
+    background-image: url('https://img.freepik.com/free-vector/abstract-background-with-modern-design_1048-7817.jpg?w=1380&t=st=1695831743~exp=1695832343~hmac=67070e0cd854d41853ff27f852b120612abc84b5052e9d999f9486cb39fd9c52');
+    transition: 0.5s;
 }
 .todos-single--text{
+    color: silver;
     flex: 1;
     padding: 5px;
     border: none;
@@ -56,13 +57,20 @@
 }
 .todos-single-text:focus{
     outline: none;
+    padding: 50px;
 }   
 .icon{
     margin-left: 10px;
+    color: silver;
     font-size: 25px;
     cursor: pointer;
     text-align: center;
+    transition: 0.5s;
 }
+.icon:hover{
+    color: gray;
+}
+
 @media (max-width: 700px) {
     .input{
         width: 95%;
