@@ -39,24 +39,31 @@
     border-radius: 5px;
     background-color: rgba(50, 195, 205);
 }
+.todos-heading{
+    font-size: 30px;
+    color: white;
+}
 .todos-remove{
     display: flex;
     width: 47.5%;
     flex-direction: column;
     padding: 15px;
     border-radius: 5px;
-    background-color: rgba(50, 195, 205);
+    background-image: url('https://img.freepik.com/free-photo/abstract-gradient-neon-lights_23-2149279180.jpg?w=1380&t=st=1695981982~exp=1695982582~hmac=6dcb6f352a1591e5b50fb439ea25872f14bb5379a88cc764d89d6c7e0c651aa2');
 }
 .todos-single{
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
-    width: 29.5%;
     border-radius: 5px;
     padding: 20px;
     margin-left: 20px;
     margin-top: 15px;
     background-image: url('https://i.pinimg.com/474x/7f/8b/f6/7f8bf600d4564d9c98c8e214509eefc3.jpg');
     transition: 0.5s;
+}
+.todos-single:hover{
+    box-shadow: 0 0 5px black;
+    transform: scale(1.03);
 }
 .todos-single--text{
     flex: 1;
@@ -92,8 +99,10 @@
     }
     .todos{
         width: 95%;
+        margin-bottom: 10px;
     }
-    .todos-single{
-        width: 100%;
+    .container{
+        width: 95%;
+        flex-direction: column;
     }
 }
