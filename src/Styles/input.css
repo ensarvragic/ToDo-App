@@ -49,7 +49,7 @@
     flex-direction: column;
     padding: 15px;
     border-radius: 5px;
-    background-image: url('https://img.freepik.com/free-photo/abstract-gradient-neon-lights_23-2149279180.jpg?w=1380&t=st=1695981982~exp=1695982582~hmac=6dcb6f352a1591e5b50fb439ea25872f14bb5379a88cc764d89d6c7e0c651aa2');
+    background-color: rgba(0, 97, 80, 1);
 }
 .todos-single{
     display: flex;
