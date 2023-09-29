@@ -22,7 +22,7 @@ const App: React.FC = () => {
 console.log(todo)
 
   return (
-    <DragDropContext onDragEnd={}>
+    <DragDropContext onDragEnd={() => {}}>
        <div className='App'>
       <span className='heading'>SET YOUR TASKS</span>
       <InputField 

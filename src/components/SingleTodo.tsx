@@ -88,7 +88,7 @@ const SingleTodo: React.FC<Props> = ({index, todo, todos, setTodos}) => {
         )
       }
     </Draggable>
-  )
-}
+  );
+};
 
 export default SingleTodo
