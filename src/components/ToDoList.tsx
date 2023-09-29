@@ -14,8 +14,8 @@ interface Props{
 const TodoList: React.FC<Props> = ({ 
     todos, 
     setTodos, 
+    completedTodos,
     setCompletedTodos,
-    completedTodos, 
     }) => {
     return(
         <div className="container">
@@ -47,7 +47,7 @@ const TodoList: React.FC<Props> = ({
                 {...provided.droppableProps}
                 >
             <span className="todos-heading">COMPLETED TASKS</span>
-                {todos.map((todo) => (
+                {completedTodos.map((todo) => (
                         <SingleTodo
                         todo={todo}
                         todos={todos}
