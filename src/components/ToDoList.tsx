@@ -11,32 +11,33 @@ interface Props{
     setCompletedTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
 }
 
-const TodoList: React.FC<Props> = ({ todos, setTodos}) => {
+const TodoList: React.FC<Props> = ({ 
+    todos, 
+    setTodos, 
+    setCompletedTodos,
+    completedTodos, 
+    }) => {
     return(
         <div className="container">
             <Droppable droppableId='TodosList'>
                 {(provided) => (
-                        <div 
-                        className="todos" 
-                        ref={provided.innerRef} 
-                        {...provided.droppableProps}
-                        >
-                <span className="todos-heading">
-                    ACTIVE TASKS
-                </span>
+                <div 
+                    className="todos" 
+                    ref={provided.innerRef} 
+                    {...provided.droppableProps}
+                    >
+                <span className="todos-heading">ACTIVE TASKS</span>
                 {
                     todos.map((todo) => (
                         <SingleTodo
                         todo={todo}
-                        todos={todos}
+                        todos={completedTodos}
                         key={todo.id}
-                        setTodos={setTodos} 
+                        setTodos={setCompletedTodos} 
                         />
-                    ))
-                }
+                    ))}
                 </div>
-                    )
-                }
+            )}
             </Droppable>
             <Droppable droppableId="TodosRemove">
             {(provided  ) => 
@@ -45,19 +46,15 @@ const TodoList: React.FC<Props> = ({ todos, setTodos}) => {
                 ref={provided.innerRef} 
                 {...provided.droppableProps}
                 >
-            <span className="todos-heading">
-                    COMPLETED TASKS
-                </span>
-                {
-                    todos.map((todo) => (
+            <span className="todos-heading">COMPLETED TASKS</span>
+                {todos.map((todo) => (
                         <SingleTodo
                         todo={todo}
                         todos={todos}
                         key={todo.id}
                         setTodos={setTodos} 
                         />
-                    ))
-                }
+                    ))}
             </div>
             )}
             </Droppable>
