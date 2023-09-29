@@ -1,6 +1,6 @@
 .input{
     display: flex;
-    width: 90%;
+    width: 95%;
     position: relative;
     align-items: center;
 }
@@ -33,9 +33,11 @@
 }
 .todos{
     display: flex;
-    justify-content: center;
-    width: 90%;
-    flex-wrap: wrap;
+    width: 47.5%;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(50, 195, 205);
 }
 .todos-single{
     display: flex;
@@ -58,6 +60,13 @@
     outline: none;
     padding: 50px;
 }   
+.container{
+    display: flex;
+    width: 95%;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 .icon{
     margin-left: 10px;
     font-size: 25px;
