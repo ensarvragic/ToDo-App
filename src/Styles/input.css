@@ -28,8 +28,13 @@
     font-size: 15px;
     background-color: #2f74c0;
     color: white;
-    transition: 0.2 all;
+    cursor: pointer;
+    transition: 0.4s all;
     box-shadow: 0 0 10px black;
+}
+.input_submit:hover{
+    width: 55px;
+    height: 55px;
 }
 .todos{
     display: flex;
@@ -71,9 +76,8 @@
     border: none;
     font-size: 20px;
 }
-.todos-single-text:focus{
+.todos-single--text:focus{
     outline: none;
-    padding: 50px;
 }   
 .container{
     display: flex;
@@ -100,6 +104,9 @@
     .todos{
         width: 95%;
         margin-bottom: 10px;
+    }
+    .todos-remove{
+        width: 95%;
     }
     .container{
         width: 95%;
